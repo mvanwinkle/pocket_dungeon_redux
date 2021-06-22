@@ -68,18 +68,7 @@ Now it is time for me to introduce you to the patent pending DunGen system.
 \begin{figure}[h]
 \caption{The DunGen System}
 \label{fig:the_dungen_system}
-
-\begin{tabular}{| r | l |}
-\hline
-\multicolumn{2}{|c|}{\ref{itm:srt_S}} \\
-\hline
-1-2 & 3 \\
-3-4 & 4 \\
-5 & 5 \\
-6 & 6 \\
-\hline
-\end{tabular}
-
+\input{dungen_system}
 \end{figure}
 
 Looks like a just a random bunch of letters and numbers huh? I like to call this game camouflage. But you are a smart gamer; you should be able to make sense out of this after I detail how to use it. Mastering this system
@@ -111,13 +100,13 @@ Simple enough.
 \begin{description}
 \item[\namedlabel{itm:srt_S}{S}] - Size of the room that you are entering. This is how many squares it should take up. But what shape you ask? I don't care. This is part of the fun of Pocket Dungeon, using the random rolls to make your dungeon. Roll a 3, make a room that’s 4 squares. It can be a hallway, a square room, or some other crazy shape. The only rule while drawing rooms, is that it cannot result in there being squares without rooms trapped somewhere on the map.
 
-\item[\namedlabel{itm:srt_D}{\#D}] - Number of added doors. Obviously the room already has one door, you walked through it, right? Since you are entering a room for the first time, this is how many other exits you see. Where do you put them? Don't put it right next to the one you came in from, unless it would lead to a different room then the one you just came out of. Still can't figure it out, then use the handy Dd chart.
+\item[\namedlabel{itm:srt_nD}{\#D}] - Number of added doors. Obviously the room already has one door, you walked through it, right? Since you are entering a room for the first time, this is how many other exits you see. Where do you put them? Don't put it right next to the one you came in from, unless it would lead to a different room then the one you just came out of. Still can't figure it out, then use the handy Dd chart.
 
 \item[\namedlabel{itm:srt_L}{L}] - Door/Treasure lockedness (yeah, I know it’s not a real word). Is the door, locked, unlocked, or some other mystical quantum state? Only this chart can tell. This is to be used both when putting down doors (ONLY for rooms with more than 1 door being added), and chests. There are several different ways to open a locked item: Warriors can Bash, Thieves can Pick Lock, Wizards or Rangers can use the spell Knock or you can use then discard a Key if you have one.
 
 \item[\namedlabel{itm:srt_DD}{DD}] - Door direction. This is for the times when you can't decide which side of the room to stick a door on. You can also use this table for other things, like deciding where to put a treasure, or which way to go young man.
 
-\item[\namedlabel{itm:srt_M}{\#M}] - How many monsters are in the room? This tells you! Roll it up, slap them down. I use X's, you can draw whatever you want. Where do you put them in the room? I don't care! You choose!
+\item[\namedlabel{itm:srt_nM}{\#M}] - How many monsters are in the room? This tells you! Roll it up, slap them down. I use X's, you can draw whatever you want. Where do you put them in the room? I don't care! You choose!
 
 \item[\namedlabel{itm:srt_Mn}{Mn}] - What kind of monsters are they? This chart has some differences. It has a few \underline{\hspace*{1cm}}'s. You will need to fill this out before you start the dungeon. If you are currently playing, and referring back to this because you don't know what the \underline{\hspace*{1cm}} is for, then you failed to read the instructions BEFORE you started playing.
 
