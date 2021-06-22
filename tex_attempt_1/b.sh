@@ -1,6 +1,6 @@
 #!/bin/bash
 
-latex pocket_dungeon.tex
+pdflatex pocket_dungeon.tex
 # makeglossaries pocket_dungeon
 pdflatex pocket_dungeon.tex
 
