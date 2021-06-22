@@ -1,17 +1,25 @@
 \documentclass[a6paper,hidelinks]{article}
 \usepackage[margin=5mm]{geometry}
-\usepackage[toc]{glossaries}
-% \usepackage[letterpaper]{geometry}
-% \usepackage{fullpage}
 \usepackage{hyperref}
-% \usepackage[xindy]{glossaries}
 
-% \makeglossaries
-% \newglossaryentry{gsomething}
-% {
-%	name=GSomething,
-%	description={This is a glossary something entry.}
-% }
+% This defines a "namedlabel" command which allows you to reference
+% named items in a description.
+%
+% Like this:
+%
+% Here's what an S thing is: \ref{itm:srt_S}
+% \begin{description}
+%	\item[\namedlabel{itm:srt_S}{S}] -
+% \end{description}
+
+\makeatletter
+\def\namedlabel#1#2{\begingroup
+    #2%
+    \def\@currentlabel{#2}%
+    \phantomsection\label{#1}\endgroup
+}
+\makeatother
+
 
 \begin{document}
 
@@ -80,10 +88,12 @@ then I will do Z.
 
 Simple enough.
 
+% Here's what an S thing is: \ref{itm:srt_S}
+
 \subsubsection{These Letters, They Must Mean Something!}
 
 \begin{description}
-\item[S\label{itm:srt_S}] - Size of the room that you are entering. This is how many squares it should take up. But what shape you ask? I don't care. This is part of the fun of Pocket Dungeon, using the random rolls to make your dungeon. Roll a 3, make a room that’s 4 squares. It can be a hallway, a square room, or some other crazy shape. The only rule while drawing rooms, is that it cannot result in there being squares without rooms trapped somewhere on the map.
+\item[\namedlabel{itm:srt_S}{S}] - Size of the room that you are entering. This is how many squares it should take up. But what shape you ask? I don't care. This is part of the fun of Pocket Dungeon, using the random rolls to make your dungeon. Roll a 3, make a room that’s 4 squares. It can be a hallway, a square room, or some other crazy shape. The only rule while drawing rooms, is that it cannot result in there being squares without rooms trapped somewhere on the map.
 
 \item[\#D\label{itm:srt_D}] - Number of added doors. Obviously the room already has one door, you walked through it, right? Since you are entering a room for the first time, this is how many other exits you see. Where do you put them? Don't put it right next to the one you came in from, unless it would lead to a different room then the one you just came out of. Still can't figure it out, then use the handy Dd chart.
 
