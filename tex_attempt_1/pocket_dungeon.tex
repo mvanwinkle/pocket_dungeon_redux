@@ -72,10 +72,9 @@ Now it is time for me to introduce you to the patent pending DunGen system.
 \begin{figure}[!]
 \caption{The DunGen System}
 \label{fig:the_dungen_system}
+\begin{center}
 \includegraphics[width=0.8\linewidth]{dungen_system_snip.png}
-%\tiny{
-%\input{dungen_system}
-%}
+\end{center}
 \end{figure}
 
 Take a look at figure \ref{fig:the_dungen_system}.
@@ -290,7 +289,7 @@ ever need to run away or come face to face with anything too
 nasty. A quick *flip* and I can write down his health as 8, and I
 put his movement down as 2. I also put down that he has
 10AP.
-I'm going to choose MM as his spell and 2 P(otions) 1 Health
+I'm going to choose \ref{spell:MM} as his spell and 2 P(otions) 1 Health
 Potion, and 1 AP potion.
 So now I have my adventurer.
 Here is a picture of the our first room:
@@ -298,27 +297,34 @@ Here is a picture of the our first room:
 \begin{figure}[h]
 \caption{Meathead the Squishy's First Battle}
 \label{fig:meatheads_first_battle}
+\begin{center}
 \includegraphics[width=0.8\linewidth]{meatheads_first_battle_vs_kobolds.png}
+\end{center}
 \end{figure}
 
-The green line is Line of Sight, which obviously fails. Everyone
-knows you can’t cast magic missiles around corners, that
-would just be silly.
-So combat goes like this
-Round 1 – I move one square right, the Kobold moves one
+The green line is Line of Sight, which obviously fails.
+Everyone knows you can’t cast magic missiles around corners, that would just be silly.
+So combat goes like this:
+\begin{description}
+
+\item[Round 1] – I move one square right, the Kobold moves one
 square down towards me.
-Round 2 – I unleash my two MMs *flip*5 + 5 +1 (flip, plus my
+
+\item[Round 2] – I unleash my two MMs *flip*5 + 5 +1 (flip, plus my
 W(isdom), plus MMs H(it bonus) *flip*1 +5 + 1. The first one
 hits! (The Kobold has A8, so I have to beat that) and do the D1
 listed at the end of the instructions (I also wrote that info
 down with my character stats). The Kobold, and his friends
 moves down again closing the gap between us.
-Round 3 – Pew Pew! *flip*3 +5 +1 *flip*2+5 +1 One hit, one
+
+\item[Round 3] – Pew Pew! *flip*3 +5 +1 *flip*2+5 +1 One hit, one
 miss. He is mad! *flip*4 for his attack. I take 2 damage.
 And it goes on like this. In the end, Meathead is triumphant
 and gets to open the chest. *flip*2, unlocked! From here all I
 need to do is find out what kind of treasures await me in the
 chest, and decide which door to go through.
+\end{description}
+
 
 \subsection{Starting Eqipment}
 Now, pick your starting equipment. You get {\em one} W(eapon) or S(pell), and {\em either} 2 P(otions) or 1 Cl(oth armor).
@@ -557,7 +563,7 @@ All spells need to have an attack roll made for success.
 \subsubsection{Fireball}
 R2 D4 H0 3AP
 
-\subsubsection{Magic Missile}
+\subsubsection{Magic Missile} \namedlabel{spell:MM}{MM}
 R5 D1 H1 1AP
 
 Shoots 2 missiles at the same time, roll them separately. They can target separate targets if you want
